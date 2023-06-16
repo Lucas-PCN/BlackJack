@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 
 function Game() {
   const [name, setName] = useState("");
@@ -7,13 +7,13 @@ function Game() {
     // Recupera o nome do armazenamento local, se existir
     const storedName = localStorage.getItem('name');
     if (storedName) {
-      setName(name);
+      setName(storedName);
     }
   }, []);
 
   return (
     <div>
-      <h1>Bem vindo ao jogo, ${name}</h1>
+      <h1>{`Bem vindo ao jogo, ${name}`}</h1>
     </div>
   )
 }
