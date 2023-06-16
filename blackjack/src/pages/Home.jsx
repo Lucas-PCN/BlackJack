@@ -21,7 +21,7 @@ function Home() {
     </div>
 
     <div>
-      <label for="name">
+      <label htmlFor="name">
         Insira seu nome: 
       </label>
       
